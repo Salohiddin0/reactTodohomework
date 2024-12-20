@@ -19,6 +19,7 @@
 // =====================================================
 
 import React, { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function TodoApp () {
   const [todos, setTodos] = useState([])
@@ -142,7 +143,9 @@ const styles = {
     border: '1px solid #ccc',
     borderRadius: '4px'
   },
+
   addButton: {
+    marginTop: '10px',
     padding: '10px 20px',
     backgroundColor: '#28a745',
     color: '#fff',
@@ -150,6 +153,7 @@ const styles = {
     borderRadius: '4px',
     cursor: 'pointer'
   },
+
   todoList: {
     listStyle: 'none',
     padding: 0,
